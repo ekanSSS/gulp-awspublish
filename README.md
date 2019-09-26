@@ -1,21 +1,20 @@
-# gulp-awspublish
-
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]
+# gulp-awspublish-compress-detect
 
 > awspublish plugin for [gulp](https://github.com/wearefractal/gulp)
+> this module if a fork from gulp-awspublish (https://github.com/pgherveou/gulp-awspublish)
 
 ## Usage
 
-First, install `gulp-awspublish` as a development dependency:
+First, install `gulp-awspublish-compress-detect` as a development dependency:
 
 ```shell
-npm install --save-dev gulp-awspublish
+npm install --save-dev gulp-awspublish-compress-detect
 ```
 
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var awspublish = require("gulp-awspublish");
+var awspublish = require("gulp-awspublish-compress-detect");
 
 gulp.task("publish", function() {
   // create a new publisher using S3 options
@@ -193,6 +192,7 @@ Create a through stream, that push files to s3.
   * noAcl: do not set x-amz-acl by default
   * simulate: debugging option to simulate s3 upload
   * createOnly: skip file updates
+  * compress: autodectect compress from object ({".gz": "gzip"})
 
 Files that go through the stream receive extra properties:
 
@@ -346,10 +346,3 @@ https://www.npmjs.com/package/gulp-cloudfront-invalidate-aws-publish
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
-
-[npm-url]: https://npmjs.org/package/gulp-awspublish
-[npm-image]: https://badge.fury.io/js/gulp-awspublish.svg
-[depstat-url]: https://david-dm.org/pgherveou/gulp-awspublish
-[depstat-image]: https://david-dm.org/pgherveou/gulp-awspublish.svg
-[travis-url]: https://www.travis-ci.org/pgherveou/gulp-awspublish
-[travis-image]: https://www.travis-ci.org/pgherveou/gulp-awspublish.svg?branch=master
