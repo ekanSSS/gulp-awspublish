@@ -1,5 +1,5 @@
 {
-  "name": "gulp-awspublish",
+  "name": "gulp-awspublish-compress-detect",
   "version": "4.0.0",
   "description": "gulp plugin to publish files to amazon s3",
   "keywords": [
@@ -8,17 +8,17 @@
     "s3",
     "publish"
   ],
-  "homepage": "https://github.com/pgherveou/gulp-awspublish",
-  "bugs": "https://github.com/pgherveou/gulp-awspublish/issues",
+  "homepage": "https://github.com/ekanSSS/gulp-awspublish",
+  "bugs": "https://github.com/ekanSSS/gulp-awspublish/issues",
   "author": {
-    "name": "PG Herveou",
-    "email": "pg@jogabo.com",
-    "url": "https://github.com/pgherveou"
+    "name": "JR BERETTA",
+    "email": "jrberetta@hotmail.fr",
+    "url": "https://github.com/ekanSSS"
   },
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pgherveou/gulp-awspublish.git"
+    "url": "git://github.com/ekanSSS/gulp-awspublish.git"
   },
   "scripts": {
     "lint": "prettier --single-quote --write **/*.js && eslint --fix .",
